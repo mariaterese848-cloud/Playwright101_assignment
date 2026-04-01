@@ -18,7 +18,8 @@ const capabilities = {
   }
 };
 
-const wsEndpoint = `wss://cdp.lambdatest.com/playwright?capabilities=${encodeURIComponent(JSON.stringify(capabilities))}`;
+const wsEndpoint = `wss://cdp.lambdatest.com/playwright?
+capabilities=${encodeURIComponent(JSON.stringify(capabilities))}`;
 
 
 

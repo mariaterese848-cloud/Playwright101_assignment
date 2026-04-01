@@ -62,7 +62,7 @@ test('Test Scenario 2 - Drag & Drop Slider', async ({ page }) => {
 
 
 
-test.only('Test Scenario 3: Input Form Submit validation', async ({ page }) => {
+test('Test Scenario 3: Input Form Submit validation', async ({ page }) => {
     // 1. Open the URL and click “Input Form Submit”
     await page.goto(' https://www.testmuai.com/selenium-playground/');
      await page.click('text=Input Form Submit');
