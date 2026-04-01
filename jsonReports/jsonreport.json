@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 4
     },
     "preserveOutput": "always",
     "projects": [
@@ -20,10 +20,10 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 4
         },
-        "id": "chrome:latest:MacOS Catalina@lambdatest",
-        "name": "chrome:latest:MacOS Catalina@lambdatest",
+        "id": "chrome",
+        "name": "chrome",
         "testDir": "C:/Users/Kiran/Playwright101_assignment/tests",
         "testIgnore": [],
         "testMatch": [
@@ -36,10 +36,10 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 4
         },
-        "id": "chrome:latest:Windows 10@lambdatest",
-        "name": "chrome:latest:Windows 10@lambdatest",
+        "id": "firefox",
+        "name": "firefox",
         "testDir": "C:/Users/Kiran/Playwright101_assignment/tests",
         "testIgnore": [],
         "testMatch": [
@@ -71,12 +71,11 @@
       "max": 5,
       "threshold": 300000
     },
-    "runAgents": "none",
     "shard": null,
     "tags": [],
     "updateSnapshots": "missing",
-    "updateSourceMethod": "3way",
-    "version": "1.58.2",
+    "updateSourceMethod": "patch",
+    "version": "1.59.0",
     "workers": 4,
     "webServer": null
   },
@@ -89,52 +88,926 @@
       "specs": [
         {
           "title": "Test scenario 1- Simple Form Demo",
-          "ok": false,
-          "tags": [
-            "lambdatest"
-          ],
+          "ok": true,
+          "tags": [],
           "tests": [
             {
               "timeout": 30000,
               "annotations": [],
               "expectedStatus": "passed",
-              "projectId": "chrome:latest:MacOS Catalina@lambdatest",
-              "projectName": "chrome:latest:MacOS Catalina@lambdatest",
+              "projectId": "chrome",
+              "projectName": "chrome",
               "results": [
                 {
                   "workerIndex": 0,
                   "parallelIndex": 0,
-                  "status": "failed",
-                  "duration": 957,
-                  "error": {
-                    "message": "Error: browserContext.newPage: Executable doesn't exist at C:\\Users\\ltuser\\AppData\\Local\\ms-playwright\\ffmpeg-1011\\ffmpeg-win64.exe\n╔═════════════════════════════════════════════════════════════════════════╗\n║ Looks like Playwright Test or Playwright was just installed or updated. ║\n║ Please run the following command to download new browsers:              ║\n║                                                                         ║\n║     npx playwright install                                              ║\n║                                                                         ║\n║ <3 Playwright Team                                                      ║\n╚═════════════════════════════════════════════════════════════════════════╝",
-                    "stack": "Error: browserContext.newPage: Executable doesn't exist at C:\\Users\\ltuser\\AppData\\Local\\ms-playwright\\ffmpeg-1011\\ffmpeg-win64.exe\n╔═════════════════════════════════════════════════════════════════════════╗\n║ Looks like Playwright Test or Playwright was just installed or updated. ║\n║ Please run the following command to download new browsers:              ║\n║                                                                         ║\n║     npx playwright install                                              ║\n║                                                                         ║\n║ <3 Playwright Team                                                      ║\n╚═════════════════════════════════════════════════════════════════════════╝"
-                  },
-                  "errors": [
+                  "status": "passed",
+                  "duration": 21501,
+                  "errors": [],
+                  "stdout": [
                     {
-                      "message": "Error: browserContext.newPage: Executable doesn't exist at C:\\Users\\ltuser\\AppData\\Local\\ms-playwright\\ffmpeg-1011\\ffmpeg-win64.exe\n╔═════════════════════════════════════════════════════════════════════════╗\n║ Looks like Playwright Test or Playwright was just installed or updated. ║\n║ Please run the following command to download new browsers:              ║\n║                                                                         ║\n║     npx playwright install                                              ║\n║                                                                         ║\n║ <3 Playwright Team                                                      ║\n╚═════════════════════════════════════════════════════════════════════════╝"
+                      "text": "Console Log: JSHandle@node\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] attempting to load MIAW script when one is already loaded\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: document.addEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: document.removeEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: window.addEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: window.removeEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] attempting to load MIAW script when one is already loaded\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Attempted to initialize bootstrap multiple times\n"
+                    },
+                    {
+                      "text": "Console Log: Internal referrer tracking called\n"
+                    },
+                    {
+                      "text": "Console Log: JSHandle@node\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] attempting to load MIAW script when one is already loaded\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: document.addEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: document.removeEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: window.addEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: window.removeEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: Internal referrer tracking called\n"
+                    },
+                    {
+                      "text": "Console Log: Received the onEmbeddedMessagingReady event…\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] attempting to load MIAW script when one is already loaded\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Attempted to initialize bootstrap multiple times\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/view/25536381cca745054f12fe4bf003e29e/prod/en-US/home_view was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/framework/e3a62caf58/prod/lwr_app was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/framework/6bba9463ca/prod/lwr_app_bootstrap_hook was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/view/c39026652cac2d9d615549ea99127d91/prod/en-US/frame_view was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/framework/1e7fb74fd8/prod/lwr_loader was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/framework/eac802e7d8/prod/lwr_bootstrap was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/assets/styles/embedded-messaging-styling.min.css?33eb81e4ac was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/framework/9faac7844c/prod/lwr_lwc was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/assets/styles/salesforce-lightning-design-system.min.css?33eb81e4ac was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/component/259a789b5905e4a3e65c0942cc97421d/prod/en-US/force/luvioLwcBindings_cmp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/component/5b8557d8725fba2dbf2e6a4968ec430c/prod/en-US/force/luvioRuntimeWebruntime_cmp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Welcome to TestMu AI\n"
                     }
                   ],
-                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-04-01T06:10:46.696Z",
+                  "startTime": "2026-04-01T15:14:05.175Z",
                   "annotations": [],
                   "attachments": [
                     {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Kiran\\Playwright101_assignment\\test-results\\playwright101-assignment-Test-scenario-1--Simple-Form-Demo-chrome\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Kiran\\Playwright101_assignment\\test-results\\playwright101-assignment-Test-scenario-1--Simple-Form-Demo-chrome\\video.webm"
+                    },
+                    {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\Kiran\\Playwright101_assignment\\test-results\\playwright101-assignment-Test-scenario-1--Simple-Form-Demo-chrome-latest-MacOS-Catalina-lambdatest\\trace.zip"
+                      "path": "C:\\Users\\Kiran\\Playwright101_assignment\\test-results\\playwright101-assignment-Test-scenario-1--Simple-Form-Demo-chrome\\trace.zip"
                     }
                   ]
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "1006a25eb4a85a57db51-4b40431e79a5cad738d2",
+          "id": "1006a25eb4a85a57db51-652274da324ca56d7617",
           "file": "playwright101-assignment.spec.ts",
           "line": 7,
+          "column": 5
+        },
+        {
+          "title": "Test Scenario 2 - Drag & Drop Slider",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 25541,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Console Log: JSHandle@node\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] attempting to load MIAW script when one is already loaded\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: document.addEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: document.removeEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: window.addEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: window.removeEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: Internal referrer tracking called\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] attempting to load MIAW script when one is already loaded\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Attempted to initialize bootstrap multiple times\n"
+                    },
+                    {
+                      "text": "Console Log: JSHandle@node\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] attempting to load MIAW script when one is already loaded\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: document.addEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: document.removeEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: window.addEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: window.removeEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: Internal referrer tracking called\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] attempting to load MIAW script when one is already loaded\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Attempted to initialize bootstrap multiple times\n"
+                    },
+                    {
+                      "text": "Console Log: Received the onEmbeddedMessagingReady event…\n"
+                    },
+                    {
+                      "text": "Console Log: Received the onEmbeddedMessagingReady event…\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/view/25536381cca745054f12fe4bf003e29e/prod/en-US/home_view was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/framework/e3a62caf58/prod/lwr_app was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/framework/6bba9463ca/prod/lwr_app_bootstrap_hook was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/view/c39026652cac2d9d615549ea99127d91/prod/en-US/frame_view was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/framework/1e7fb74fd8/prod/lwr_loader was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/framework/eac802e7d8/prod/lwr_bootstrap was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/assets/styles/embedded-messaging-styling.min.css?33eb81e4ac was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/framework/9faac7844c/prod/lwr_lwc was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/assets/styles/salesforce-lightning-design-system.min.css?33eb81e4ac was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/component/259a789b5905e4a3e65c0942cc97421d/prod/en-US/force/luvioLwcBindings_cmp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/component/5b8557d8725fba2dbf2e6a4968ec430c/prod/en-US/force/luvioRuntimeWebruntime_cmp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/view/25536381cca745054f12fe4bf003e29e/prod/en-US/home_view was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/framework/e3a62caf58/prod/lwr_app was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/framework/6bba9463ca/prod/lwr_app_bootstrap_hook was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/view/c39026652cac2d9d615549ea99127d91/prod/en-US/frame_view was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/framework/1e7fb74fd8/prod/lwr_loader was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/framework/eac802e7d8/prod/lwr_bootstrap was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/assets/styles/embedded-messaging-styling.min.css?33eb81e4ac was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/framework/9faac7844c/prod/lwr_lwc was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/assets/styles/salesforce-lightning-design-system.min.css?33eb81e4ac was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/component/259a789b5905e4a3e65c0942cc97421d/prod/en-US/force/luvioLwcBindings_cmp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/component/5b8557d8725fba2dbf2e6a4968ec430c/prod/en-US/force/luvioRuntimeWebruntime_cmp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-04-01T15:14:05.162Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Kiran\\Playwright101_assignment\\test-results\\playwright101-assignment-Test-Scenario-2---Drag-Drop-Slider-chrome\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Kiran\\Playwright101_assignment\\test-results\\playwright101-assignment-Test-Scenario-2---Drag-Drop-Slider-chrome\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Kiran\\Playwright101_assignment\\test-results\\playwright101-assignment-Test-Scenario-2---Drag-Drop-Slider-chrome\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1006a25eb4a85a57db51-13d3ed0fcf26df499b65",
+          "file": "playwright101-assignment.spec.ts",
+          "line": 37,
+          "column": 5
+        },
+        {
+          "title": "Test Scenario 3: Input Form Submit validation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 23830,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Console Log: JSHandle@node\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] attempting to load MIAW script when one is already loaded\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: document.addEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: document.removeEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: window.addEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: window.removeEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: Failed to fetch country data: TypeError: Failed to fetch\n    at https://www.testmuai.com/_next/static/chunks/10382-a4aa1e9eaf84e711.js:1:189799\n    at uD (https://www.testmuai.com/_next/static/chunks/framework-b21a9a9d949ebca4.js:1:84105)\n    at oI (https://www.testmuai.com/_next/static/chunks/framework-b21a9a9d949ebca4.js:1:113098)\n    at https://www.testmuai.com/_next/static/chunks/framework-b21a9a9d949ebca4.js:1:107673\n    at x (https://www.testmuai.com/_next/static/chunks/framework-b21a9a9d949ebca4.js:1:130706)\n    at MessagePort.T (https://www.testmuai.com/_next/static/chunks/framework-b21a9a9d949ebca4.js:1:131236)\n"
+                    },
+                    {
+                      "text": "Console Log: [DOM] Input elements should have autocomplete attributes (suggested: \"current-password\"): (More info: https://goo.gl/9p2vKq) %o\n"
+                    },
+                    {
+                      "text": "Console Log: JSHandle@node\n"
+                    },
+                    {
+                      "text": "Console Log: [DOM] Input elements should have autocomplete attributes (suggested: \"current-password\"): (More info: https://goo.gl/9p2vKq) %o\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] attempting to load MIAW script when one is already loaded\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: document.addEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: document.removeEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: window.addEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: window.removeEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: Internal referrer tracking called\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] attempting to load MIAW script when one is already loaded\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Attempted to initialize bootstrap multiple times\n"
+                    },
+                    {
+                      "text": "Console Log: Received the onEmbeddedMessagingReady event…\n"
+                    },
+                    {
+                      "text": "Console Log: Received the onEmbeddedMessagingReady event…\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/view/25536381cca745054f12fe4bf003e29e/prod/en-US/home_view was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/framework/e3a62caf58/prod/lwr_app was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/framework/6bba9463ca/prod/lwr_app_bootstrap_hook was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/view/c39026652cac2d9d615549ea99127d91/prod/en-US/frame_view was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/framework/1e7fb74fd8/prod/lwr_loader was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/framework/eac802e7d8/prod/lwr_bootstrap was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/assets/styles/embedded-messaging-styling.min.css?33eb81e4ac was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/framework/9faac7844c/prod/lwr_lwc was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/assets/styles/salesforce-lightning-design-system.min.css?33eb81e4ac was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/component/259a789b5905e4a3e65c0942cc97421d/prod/en-US/force/luvioLwcBindings_cmp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/component/5b8557d8725fba2dbf2e6a4968ec430c/prod/en-US/force/luvioRuntimeWebruntime_cmp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/view/25536381cca745054f12fe4bf003e29e/prod/en-US/home_view was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/framework/e3a62caf58/prod/lwr_app was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/framework/6bba9463ca/prod/lwr_app_bootstrap_hook was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/view/c39026652cac2d9d615549ea99127d91/prod/en-US/frame_view was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/framework/1e7fb74fd8/prod/lwr_loader was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/framework/eac802e7d8/prod/lwr_bootstrap was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/assets/styles/embedded-messaging-styling.min.css?33eb81e4ac was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/framework/9faac7844c/prod/lwr_lwc was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/assets/styles/salesforce-lightning-design-system.min.css?33eb81e4ac was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/component/259a789b5905e4a3e65c0942cc97421d/prod/en-US/force/luvioLwcBindings_cmp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    },
+                    {
+                      "text": "Console Log: The resource https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/webruntime/component/5b8557d8725fba2dbf2e6a4968ec430c/prod/en-US/force/luvioRuntimeWebruntime_cmp was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-04-01T15:14:05.235Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Kiran\\Playwright101_assignment\\test-results\\playwright101-assignment-T-45aa5-nput-Form-Submit-validation-chrome\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Kiran\\Playwright101_assignment\\test-results\\playwright101-assignment-T-45aa5-nput-Form-Submit-validation-chrome\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Kiran\\Playwright101_assignment\\test-results\\playwright101-assignment-T-45aa5-nput-Form-Submit-validation-chrome\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1006a25eb4a85a57db51-b6c1cc887025fcdc7999",
+          "file": "playwright101-assignment.spec.ts",
+          "line": 65,
+          "column": 5
+        },
+        {
+          "title": "Test scenario 1- Simple Form Demo",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 27818,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Console Log: JSHandle@node\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: document.addEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: document.removeEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: window.addEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: window.removeEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] attempting to load MIAW script when one is already loaded\n"
+                    },
+                    {
+                      "text": "Console Log: Internal referrer tracking called\n"
+                    },
+                    {
+                      "text": "Console Log: [JavaScript Warning: \"The value of the attribute “expires” for the cookie “_ga_QK7VZQJBWC” has been overwritten.\" {file: \"https://www.testmuai.com/selenium-playground/\" line: 0}]\n"
+                    },
+                    {
+                      "text": "Console Log: [JavaScript Warning: \"The value of the attribute “expires” for the cookie “_ga_QK7VZQJBWC” has been overwritten.\" {file: \"https://www.testmuai.com/selenium-playground/\" line: 0}]\n"
+                    },
+                    {
+                      "text": "Console Log: [JavaScript Warning: \"This page is in Quirks Mode. Page layout may be impacted. For Standards Mode use “<!DOCTYPE html>”.\" {file: \"https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/assets/htdocs/sitecontext.min.html?parent_domain=https%3A%2F%2Fwww.testmuai.com\" line: 0}]\n"
+                    },
+                    {
+                      "text": "Console Log: [JavaScript Warning: \"Loading failed for the <script> with source “https://assets.testmuai.com/resources/js/salesforce_chatwidget.js”.\" {file: \"https://www.testmuai.com/selenium-playground/\" line: 1}]\n"
+                    },
+                    {
+                      "text": "Console Log: [JavaScript Warning: \"Loading failed for the <script> with source “https://googleads.g.doubleclick.net/pagead/viewthroughconversion/11253904610/?random=1775056458901&cv=11&fst=1775056458901&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be63u0v9138420558z89241734002za20gzb9241734002zd9241734002xec&gcd=13v3v3v3v5l1&dma=0&tag_exp=0~115938466~115938468~116991817&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.testmuai.com%2Fselenium-playground%2F&frm=0&tiba=Selenium%20Grid%20Online%20%7C%20Run%20Selenium%20Test%20On%20Cloud&did=dMWZhNz&gdid=dMWZhNz&hn=www.googleadservices.com&npa=0&us_privacy=1---&pscdl=noapi&auid=1505951242.1775056460&_tu=CA&data=event%3Dgtag.config&rfmt=3&fmt=4”.\" {file: \"https://www.testmuai.com/selenium-playground/\" line: 1}]\n"
+                    },
+                    {
+                      "text": "Console Log: [JavaScript Warning: \"Loading failed for the <script> with source “https://googleads.g.doubleclick.net/pagead/viewthroughconversion/11253904610/?random=1775056458908&cv=11&fst=1775056458908&bg=ffffff&guid=ON&async=1&gtm=45be63u0v9138420558z89241734002za20gzb9241734002zd9241734002xea&gcd=13v3v3v3v5l1&dma=0&tag_exp=0~115938466~115938468~116991817&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.testmuai.com%2Fselenium-playground%2F&frm=0&tiba=Selenium%20Grid%20Online%20%7C%20Run%20Selenium%20Test%20On%20Cloud&did=dMWZhNz&gdid=dMWZhNz&hn=www.googleadservices.com&npa=0&us_privacy=1---&pscdl=noapi&auid=1505951242.1775056460&_tu=CA&data=ads_data_redaction%3Dtrue&rfmt=3&fmt=4”.\" {file: \"https://www.testmuai.com/selenium-playground/\" line: 1}]\n"
+                    },
+                    {
+                      "text": "Console Log: [JavaScript Warning: \"Loading failed for the <script> with source “https://bat.bing.com/p/insights/t/283008386”.\" {file: \"https://www.testmuai.com/selenium-playground/\" line: 1}]\n"
+                    },
+                    {
+                      "text": "Console Log: [JavaScript Error: \"Cookie “_fbp” has been rejected for invalid domain.\" {file: \"https://www.testmuai.com/selenium-playground/\" line: 0}]\n"
+                    },
+                    {
+                      "text": "Console Log: [JavaScript Warning: \"A resource is blocked by OpaqueResponseBlocking, please check browser console for details.\" {file: \"https://px.ads.linkedin.com/collect?v=2&fmt=js&pid=8562572&time=1775056459373&li_adsId=c59c0065-093a-4a5e-b3b0-18ae4c27cd77&url=https%3A%2F%2Fwww.testmuai.com%2Fselenium-playground%2F\" line: 0}]\n"
+                    },
+                    {
+                      "text": "Console Log: [JavaScript Warning: \"The value of the attribute “expires” for the cookie “_ga_QK7VZQJBWC” has been overwritten.\" {file: \"https://www.testmuai.com/selenium-playground/\" line: 0}]\n"
+                    },
+                    {
+                      "text": "Console Log: JSHandle@node\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: document.addEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: document.removeEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: window.addEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: window.removeEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: Internal referrer tracking called\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] attempting to load MIAW script when one is already loaded\n"
+                    },
+                    {
+                      "text": "Console Log: [JavaScript Warning: \"The value of the attribute “expires” for the cookie “_ga_QK7VZQJBWC” has been overwritten.\" {file: \"https://www.testmuai.com/selenium-playground/simple-form-demo/\" line: 0}]\n"
+                    },
+                    {
+                      "text": "Console Log: [JavaScript Warning: \"The value of the attribute “expires” for the cookie “_ga_QK7VZQJBWC” has been overwritten.\" {file: \"https://www.testmuai.com/selenium-playground/simple-form-demo/\" line: 0}]\n"
+                    },
+                    {
+                      "text": "Console Log: [JavaScript Warning: \"This page is in Quirks Mode. Page layout may be impacted. For Standards Mode use “<!DOCTYPE html>”.\" {file: \"https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/assets/htdocs/sitecontext.min.html?parent_domain=https%3A%2F%2Fwww.testmuai.com\" line: 0}]\n"
+                    },
+                    {
+                      "text": "Console Log: Received the onEmbeddedMessagingReady event…\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] attempting to load MIAW script when one is already loaded\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Attempted to initialize bootstrap multiple times\n"
+                    },
+                    {
+                      "text": "Welcome to TestMu AI\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-04-01T15:14:05.163Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Kiran\\Playwright101_assignment\\test-results\\playwright101-assignment-Test-scenario-1--Simple-Form-Demo-firefox\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Kiran\\Playwright101_assignment\\test-results\\playwright101-assignment-Test-scenario-1--Simple-Form-Demo-firefox\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Kiran\\Playwright101_assignment\\test-results\\playwright101-assignment-Test-scenario-1--Simple-Form-Demo-firefox\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1006a25eb4a85a57db51-dcaecaebabba6e1f4f6c",
+          "file": "playwright101-assignment.spec.ts",
+          "line": 7,
+          "column": 5
+        },
+        {
+          "title": "Test Scenario 2 - Drag & Drop Slider",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 23343,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Console Log: JSHandle@node\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: document.addEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: document.removeEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: window.addEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: window.removeEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] attempting to load MIAW script when one is already loaded\n"
+                    },
+                    {
+                      "text": "Console Log: Internal referrer tracking called\n"
+                    },
+                    {
+                      "text": "Console Log: [JavaScript Warning: \"This page is in Quirks Mode. Page layout may be impacted. For Standards Mode use “<!DOCTYPE html>”.\" {file: \"https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/assets/htdocs/sitecontext.min.html?parent_domain=https%3A%2F%2Fwww.testmuai.com\" line: 0}]\n"
+                    },
+                    {
+                      "text": "Console Log: [JavaScript Warning: \"Loading failed for the <script> with source “https://cdn.firstpromoter.com/fprom.js”.\" {file: \"https://www.testmuai.com/selenium-playground/\" line: 1}]\n"
+                    },
+                    {
+                      "text": "Console Log: [JavaScript Warning: \"Loading failed for the <script> with source “https://js.zi-scripts.com/zi-tag.js”.\" {file: \"https://www.testmuai.com/selenium-playground/\" line: 1}]\n"
+                    },
+                    {
+                      "text": "Console Log: [JavaScript Warning: \"Loading failed for the <script> with source “https://bat.bing.com/bat.js”.\" {file: \"https://www.testmuai.com/selenium-playground/\" line: 1}]\n"
+                    },
+                    {
+                      "text": "Console Log: [JavaScript Warning: \"Loading failed for the <script> with source “https://assets.testmuai.com/resources/js/salesforce_chatwidget.js”.\" {file: \"https://www.testmuai.com/selenium-playground/\" line: 1}]\n"
+                    },
+                    {
+                      "text": "Console Log: [JavaScript Warning: \"Loading failed for the <script> with source “https://connect.facebook.net/en_US/fbevents.js”.\" {file: \"https://www.testmuai.com/selenium-playground/\" line: 1}]\n"
+                    },
+                    {
+                      "text": "Console Log: [JavaScript Warning: \"Loading failed for the <script> with source “https://www.dwin1.com/24859.js”.\" {file: \"https://www.testmuai.com/selenium-playground/\" line: 1}]\n"
+                    },
+                    {
+                      "text": "Console Log: [JavaScript Warning: \"Loading failed for the <script> with source “https://consent.cookiebot.com/faf6374b-99ee-4276-b877-b40111fd8ce0/cc.js?renew=false&referer=www.testmuai.com&dnt=false&init=false”.\" {file: \"https://www.testmuai.com/selenium-playground/\" line: 1}]\n"
+                    },
+                    {
+                      "text": "Console Log: JSHandle@node\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] attempting to load MIAW script when one is already loaded\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: document.addEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: document.removeEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: window.addEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: window.removeEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: Internal referrer tracking called\n"
+                    },
+                    {
+                      "text": "Console Log: [JavaScript Warning: \"The value of the attribute “expires” for the cookie “_ga_QK7VZQJBWC” has been overwritten.\" {file: \"https://www.testmuai.com/selenium-playground/drag-drop-range-sliders-demo/\" line: 0}]\n"
+                    },
+                    {
+                      "text": "Console Log: [JavaScript Warning: \"The value of the attribute “expires” for the cookie “_ga_QK7VZQJBWC” has been overwritten.\" {file: \"https://www.testmuai.com/selenium-playground/drag-drop-range-sliders-demo/\" line: 0}]\n"
+                    },
+                    {
+                      "text": "Console Log: [JavaScript Warning: \"This page is in Quirks Mode. Page layout may be impacted. For Standards Mode use “<!DOCTYPE html>”.\" {file: \"https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/assets/htdocs/sitecontext.min.html?parent_domain=https%3A%2F%2Fwww.testmuai.com\" line: 0}]\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] attempting to load MIAW script when one is already loaded\n"
+                    },
+                    {
+                      "text": "Console Log: [JavaScript Error: \"Cookie “_fbp” has been rejected for invalid domain.\" {file: \"https://www.testmuai.com/selenium-playground/drag-drop-range-sliders-demo/\" line: 0}]\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Attempted to initialize bootstrap multiple times\n"
+                    },
+                    {
+                      "text": "Console Log: Received the onEmbeddedMessagingReady event…\n"
+                    },
+                    {
+                      "text": "Console Log: Received the onEmbeddedMessagingReady event…\n"
+                    },
+                    {
+                      "text": "Console Log: [JavaScript Warning: \"The resource at “https://www.testmuai.com/_next/static/media/4c9affa5bc8f420e-s.p.woff2” preloaded with link preload was not used within a few seconds. Make sure all attributes of the preload tag are set correctly.\" {file: \"https://www.testmuai.com/selenium-playground/drag-drop-range-sliders-demo/\" line: 0}]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-04-01T15:14:31.588Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Kiran\\Playwright101_assignment\\test-results\\playwright101-assignment-Test-Scenario-2---Drag-Drop-Slider-firefox\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Kiran\\Playwright101_assignment\\test-results\\playwright101-assignment-Test-Scenario-2---Drag-Drop-Slider-firefox\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Kiran\\Playwright101_assignment\\test-results\\playwright101-assignment-Test-Scenario-2---Drag-Drop-Slider-firefox\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1006a25eb4a85a57db51-3515428715a776d2b475",
+          "file": "playwright101-assignment.spec.ts",
+          "line": 37,
+          "column": 5
+        },
+        {
+          "title": "Test Scenario 3: Input Form Submit validation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 13888,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Console Log: JSHandle@node\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: document.addEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: document.removeEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: window.addEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: window.removeEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] attempting to load MIAW script when one is already loaded\n"
+                    },
+                    {
+                      "text": "Console Log: [JavaScript Warning: \"Loading failed for the <script> with source “https://assets.testmuai.com/resources/js/salesforce_chatwidget.js”.\" {file: \"https://www.testmuai.com/selenium-playground/\" line: 1}]\n"
+                    },
+                    {
+                      "text": "Console Log: Error\n"
+                    },
+                    {
+                      "text": "Console Log: Error\n"
+                    },
+                    {
+                      "text": "Console Log: A client-side exception has occurred, see here for more info: https://nextjs.org/docs/messages/client-side-exception-occurred\n"
+                    },
+                    {
+                      "text": "Console Log: Failed to fetch country data: Error\n"
+                    },
+                    {
+                      "text": "Console Log: [JavaScript Warning: \"Loading failed for the <script> with source “https://accounts.google.com/gsi/client”.\" {file: \"https://www.testmuai.com/selenium-playground/\" line: 1}]\n"
+                    },
+                    {
+                      "text": "Console Log: [JavaScript Warning: \"Loading failed for the <script> with source “https://www.googletagmanager.com/gtm.js?id=GTM-W7LZ9J7B”.\" {file: \"https://www.testmuai.com/selenium-playground/\" line: 1}]\n"
+                    },
+                    {
+                      "text": "Console Log: JSHandle@node\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: document.addEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: document.removeEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: window.addEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Warning: EmbeddedService Messaging Bootstrap may not function correctly with this native JS function modified: window.removeEventListener\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] attempting to load MIAW script when one is already loaded\n"
+                    },
+                    {
+                      "text": "Console Log: Internal referrer tracking called\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] attempting to load MIAW script when one is already loaded\n"
+                    },
+                    {
+                      "text": "Console Log: [JavaScript Warning: \"This page is in Quirks Mode. Page layout may be impacted. For Standards Mode use “<!DOCTYPE html>”.\" {file: \"https://lambdatest.my.site.com/ESWSandBoxLambdaTest1732212450416/assets/htdocs/sitecontext.min.html?parent_domain=https%3A%2F%2Fwww.testmuai.com\" line: 0}]\n"
+                    },
+                    {
+                      "text": "Console Log: [EmbeddedServiceBootstrap] Attempted to initialize bootstrap multiple times\n"
+                    },
+                    {
+                      "text": "Console Log: [JavaScript Warning: \"The value of the attribute “expires” for the cookie “_ga_QK7VZQJBWC” has been overwritten.\" {file: \"https://www.testmuai.com/selenium-playground/input-form-demo/\" line: 0}]\n"
+                    },
+                    {
+                      "text": "Console Log: [JavaScript Warning: \"The value of the attribute “expires” for the cookie “_ga_QK7VZQJBWC” has been overwritten.\" {file: \"https://www.testmuai.com/selenium-playground/input-form-demo/\" line: 0}]\n"
+                    },
+                    {
+                      "text": "Console Log: [JavaScript Error: \"Cookie “_fbp” has been rejected for invalid domain.\" {file: \"https://www.testmuai.com/selenium-playground/input-form-demo/\" line: 0}]\n"
+                    },
+                    {
+                      "text": "Console Log: Received the onEmbeddedMessagingReady event…\n"
+                    },
+                    {
+                      "text": "Console Log: Received the onEmbeddedMessagingReady event…\n"
+                    },
+                    {
+                      "text": "Console Log: [JavaScript Warning: \"The value of the attribute “expires” for the cookie “_ga_QK7VZQJBWC” has been overwritten.\" {file: \"https://www.testmuai.com/selenium-playground/input-form-demo/\" line: 0}]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-04-01T15:14:36.135Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Kiran\\Playwright101_assignment\\test-results\\playwright101-assignment-T-45aa5-nput-Form-Submit-validation-firefox\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Kiran\\Playwright101_assignment\\test-results\\playwright101-assignment-T-45aa5-nput-Form-Submit-validation-firefox\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Kiran\\Playwright101_assignment\\test-results\\playwright101-assignment-T-45aa5-nput-Form-Submit-validation-firefox\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1006a25eb4a85a57db51-64f6ef1064b6f7fe1e1f",
+          "file": "playwright101-assignment.spec.ts",
+          "line": 65,
           "column": 5
         }
       ]
@@ -142,11 +1015,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-04-01T06:10:41.666Z",
-    "duration": 20313.799000000006,
-    "expected": 0,
+    "startTime": "2026-04-01T15:14:03.635Z",
+    "duration": 55213.739,
+    "expected": 6,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }

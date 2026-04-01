@@ -1,61 +1,86 @@
-const { devices } = require('@playwright/test')
-import dotenv from 'dotenv';
+import { defineConfig, devices } from '@playwright/test';
 
-//require('dotenv').config();
-dotenv.config();
-const capabilities = {
-  browserName: 'Chrome', // Browsers allowed: `Chrome`, `MicrosoftEdge`, `pw-chromium`, `pw-firefox` and `pw-webkit`
-  browserVersion: 'latest',
-  'LT:Options': {
-    platform: 'Windows 10',
-    build: 'Playwright 101 Build',
-    name: 'Playwright Test',
-    user: process.env.LT_USERNAME,
-    accessKey: process.env.LT_ACCESS_KEY,
-    network: true,
-    video: true,
-    console: true
-  }
-};
+/**
+ * Read environment variables from file.
+ * https://github.com/motdotla/dotenv
+ */
 
-const wsEndpoint = `wss://cdp.lambdatest.com/playwright?
-capabilities=${encodeURIComponent(JSON.stringify(capabilities))}`;
-
-
-
-// Playwright config to run tests on LambdaTest platform and local
-const config = {
+export default defineConfig({
   testDir: './tests',
-  retries: 1,
-  use: {
-    headless: true,
-    screenshot: 'on',
-    video: 'on',
-    trace: 'on',
-    connectOptions: {
-      wsEndpoint
-    }
+ 
+  /* Run tests in files in parallel */
+  fullyParallel: true,
+  /* Fail the build on CI if you accidentally left test.only in the source code. */
+  forbidOnly: !!process.env.CI,
+  /* Retry on CI only */
+  retries: process.env.CI ? 2 : 0,
+  /* Opt out of parallel tests on CI. */
+  workers: process.env.CI ? 1 : undefined,
+  /* Reporter to use. See https://playwright.dev/docs/test-reporters */
+  reporter: [["dot"],["json", 
+    {
+    outputFile :  "jsonReports/jsonreport.json"}
+  ],
+   ["html", {
+    open : "always"
     
-  },
-timeout: 60000,
-projects: [
-// -- LambdaTest Config --
-  // name in the format: browserName:browserVersion:platform@lambdatest
-  // Browsers allowed: `Chrome`, `MicrosoftEdge`, `pw-chromium`, `pw-firefox` and `pw-webkit`
-  // Use additional configuration options provided by Playwright if required: https://playwright.dev/docs/api/class-testconfig
-    {
-      name: 'chrome:latest:MacOS Catalina@lambdatest',
-      use: {
-        viewport: { width: 1920, height: 1080 }
-      }
-    },
-    {
-      name: 'chrome:latest:Windows 10@lambdatest',
-      use: {
-        viewport: { width: 1280, height: 720 }
-      }
-    },
-  ]
-}
+  }]],
 
-module.exports = config
+  /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
+  use: {
+
+     headless: false,
+    screenshot: "on",
+    video : "on",  
+
+    trace: 'on',
+  },
+
+  /* Configure projects for major browsers */
+  projects: [
+     {
+      name: 'chrome',
+      use: {
+         ...devices['Desktop Chrome']
+      }
+    },
+    {
+      name: 'firefox',
+      use: {
+         ...devices['Desktop Firefox']
+      }
+    },
+   /* {
+      name: 'webkit',
+      use: { ...devices['Desktop Safari'] },
+    },*/
+
+    /* Test against mobile viewports. */
+    // {
+    //   name: 'Mobile Chrome',
+    //   use: { ...devices['Pixel 5'] },
+    // },
+    // {
+    //   name: 'Mobile Safari',
+    //   use: { ...devices['iPhone 12'] },
+    // },
+
+    /* Test against branded browsers. */
+    // {
+    //   name: 'Microsoft Edge',
+    //   use: { ...devices['Desktop Edge'], channel: 'msedge' },
+    // },
+    // {
+    //   name: 'Google Chrome',
+    //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
+    // },
+  ],
+
+  /* Run your local dev server before starting the tests */
+  // webServer: {
+  //   command: 'npm run start',
+  //   url: 'http://localhost:3000',
+  //   reuseExistingServer: !process.env.CI,
+  // },
+});
+
